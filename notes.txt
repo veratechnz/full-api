@@ -1,0 +1,9 @@
+When using Mongo remember to setup the db fom the mongo folder itself. 
+
+In the WINDOWS COMMAND PROMPT goto mongodb 3.0 bin etc
+Then create the db and add data. 
+
+Once the db is setup in C:\Program Files\MongoDB\Server\3.0\bin  ***and you have the right name reffed in your app.js file **fullstack**
+var db = monk('localhost:27017/fullstack');
+
+Then you can start mongod from anywhere in bash. 
