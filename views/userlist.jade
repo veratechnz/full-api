@@ -1,9 +1,22 @@
 extends layout
 
 block content
-    h1.
-        User Listed
-    ul
-        each user, i in userlist
-            li
-                a(href="mailto:#{user.email}")= user.username
+	.container
+		.row
+			.col-md-8.col-md-offset-2
+				h3 User List
+				table.table
+					thead
+						tr
+							th Name
+							th Email
+							th Delete / Edit
+					tbody
+						tr
+							td John Smith
+							td thisemail@place.com
+							td 
+								button(href="#" class="btn btn-danger" role="button") Delete 
+				
+
+			
